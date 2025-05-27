@@ -10,21 +10,30 @@ public class Trabalho {
     protected String tipo;
     protected String status;
     protected URI arquivo;
-    protected ArrayList<Avaliacao> avaliacoes;
+//    protected ArrayList<Avaliacao> avaliacoes;
     protected ArrayList<Usuario> autores;
-    protected ArrayList<Certificado> certificados;
+//    protected ArrayList<Certificado> certificados;
 
     public Trabalho() {
         this.idTrabalho = UUID.randomUUID();
     }
 
-    public Trabalho(String titulo, String tipo, String status, URI arquivo, ArrayList<Avaliacao> avaliacoes) {
+//    public Trabalho(String titulo, String tipo, String status, URI arquivo, ArrayList<Avaliacao> avaliacoes) {
+//        this.idTrabalho = UUID.randomUUID();
+//        this.titulo = titulo;
+//        this.tipo = tipo;
+//        this.status = status;
+//        this.arquivo = arquivo;
+//        this.avaliacoes = avaliacoes;
+//    }
+
+    public Trabalho(String titulo, String tipo, String status, URI arquivo, ArrayList<Usuario> autores) {
         this.idTrabalho = UUID.randomUUID();
         this.titulo = titulo;
         this.tipo = tipo;
         this.status = status;
         this.arquivo = arquivo;
-        this.avaliacoes = avaliacoes;
+        this.autores = autores;
     }
 
     public ArrayList<Usuario> getAutores() {
@@ -35,25 +44,25 @@ public class Trabalho {
         this.autores = autores;
     }
 
-    public ArrayList<Avaliacao> getAvaliacoes() {
-        return avaliacoes;
-    }
-
-    public void setAvaliacoes(ArrayList<Avaliacao> avaliacoes) {
-        this.avaliacoes = avaliacoes;
-    }
+//    public ArrayList<Avaliacao> getAvaliacoes() {
+//        return avaliacoes;
+//    }
+//
+//    public void setAvaliacoes(ArrayList<Avaliacao> avaliacoes) {
+//        this.avaliacoes = avaliacoes;
+//    }
 
     public UUID getIdTrabalho() {
         return idTrabalho;
     }
 
-    public ArrayList<Certificado> getCertificados() {
-        return certificados;
-    }
-
-    public void setCertificados(ArrayList<Certificado> certificados) {
-        this.certificados = certificados;
-    }
+//    public ArrayList<Certificado> getCertificados() {
+//        return certificados;
+//    }
+//
+//    public void setCertificados(ArrayList<Certificado> certificados) {
+//        this.certificados = certificados;
+//    }
 
     public String getTitulo() {
         return titulo;
